@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BezierPathDemoWithBg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trent-haaland-450776-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="ua6-JU-PVM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mmn-HR-toL">
+                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g5l-ms-nKk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1000"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Here is Ryan!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awJ-be-nrZ">
+                                                <rect key="frame" x="137" y="489.66666666666663" width="100.66666666666669" height="21"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1000" id="DEK-1I-m3m"/>
+                                            <constraint firstItem="awJ-be-nrZ" firstAttribute="centerY" secondItem="g5l-ms-nKk" secondAttribute="centerY" id="HwU-EX-hK8"/>
+                                            <constraint firstItem="awJ-be-nrZ" firstAttribute="centerX" secondItem="g5l-ms-nKk" secondAttribute="centerX" id="xT6-2k-vs9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="g5l-ms-nKk" secondAttribute="bottom" id="O6x-Pq-dHQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="g5l-ms-nKk" secondAttribute="trailing" id="PBr-Gh-eWP"/>
+                                    <constraint firstItem="g5l-ms-nKk" firstAttribute="top" secondItem="Mmn-HR-toL" secondAttribute="top" id="Qhw-Kf-jEJ"/>
+                                    <constraint firstItem="g5l-ms-nKk" firstAttribute="leading" secondItem="Mmn-HR-toL" secondAttribute="leading" id="tZh-cp-q0J"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ua6-JU-PVM" secondAttribute="bottom" id="75T-J4-Hpy"/>
+                            <constraint firstItem="Mmn-HR-toL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Nrf-Lq-i9C"/>
+                            <constraint firstItem="ua6-JU-PVM" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZS8-8w-oPc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mmn-HR-toL" secondAttribute="trailing" id="Zbw-9a-nkc"/>
+                            <constraint firstItem="Mmn-HR-toL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f6F-sv-Hxb"/>
+                            <constraint firstItem="g5l-ms-nKk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="hIF-bh-dzN"/>
+                            <constraint firstItem="ua6-JU-PVM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="tuV-5F-jzS"/>
+                            <constraint firstItem="ua6-JU-PVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wzA-rC-IYv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Mmn-HR-toL" secondAttribute="bottom" id="yew-29-XEj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="g5l-ms-nKk" id="VOY-Z5-b2T"/>
+                        <outlet property="nameLabel" destination="awJ-be-nrZ" id="J0m-aC-lKT"/>
+                        <outlet property="srollView" destination="Mmn-HR-toL" id="4o3-T1-VzP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="84" y="116"/>
+        </scene>
+        <!--List Curved View Controller-->
+        <scene sceneID="J5g-Ec-DTv">
+            <objects>
+                <viewController id="aI5-EE-6qF" customClass="ListCurvedViewController" customModule="BezierPathDemoWithBg" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f8a-ZE-kDL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OJ4-Nc-w4O">
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurvedCell" rowHeight="290" id="v11-mS-mUz" customClass="CurvedCell" customModule="BezierPathDemoWithBg" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="290"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v11-mS-mUz" id="u06-gy-dA1">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="289.66666666666669"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OJ4-Nc-w4O" firstAttribute="top" secondItem="7wJ-ED-J9w" secondAttribute="top" id="Yaf-QQ-oU5"/>
+                            <constraint firstItem="OJ4-Nc-w4O" firstAttribute="leading" secondItem="7wJ-ED-J9w" secondAttribute="leading" id="hnq-1q-08v"/>
+                            <constraint firstAttribute="bottom" secondItem="OJ4-Nc-w4O" secondAttribute="bottom" id="jKg-hR-jtG"/>
+                            <constraint firstItem="7wJ-ED-J9w" firstAttribute="trailing" secondItem="OJ4-Nc-w4O" secondAttribute="trailing" id="mXM-nT-29J"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7wJ-ED-J9w"/>
+                    </view>
+                    <connections>
+                        <outlet property="listCurvedViewTableView" destination="OJ4-Nc-w4O" id="IJn-H8-mQK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="efz-bU-zHf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="trent-haaland-450776-unsplash" width="5448" height="3632"/>
+    </resources>
+</document>
