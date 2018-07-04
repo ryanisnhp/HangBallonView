@@ -27,4 +27,5 @@ pinkView.frameBorderColor = UIColor(rgb: 0xb8b0b0) // outside border color
 view.addSubview(pinkView)
 ```
 Lean is the length of the vertical line in this picture
+
 ![lean](https://github.com/ryanisnhp/HangBallonView/blob/master/Screen%20Shot%202018-07-04%20at%206.21.11%20PM.png?raw=true)
