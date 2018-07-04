@@ -19,10 +19,12 @@ pinkView.bottomY = startBottomY
 pinkView.centerImage = centerImage // image in the center
 pinkView.backgroundColor = UIColor.clear // background color for the curved view
 pinkView.imageBorderWidth = 4. 0 // border width 
-pinkView.lean = startLean // 
+pinkView.lean = startLean // See in the picture below
 pinkView.circleRadiusPortition = radiusPortition // circle width / view width
 pinkView.imageBorderColor = UIColor(rgb: 0xfbf0f0) // image border color
 pinkView.frameFillColor = UIColor(rgb: 0xdfd3d3) // fill color onto the view
 pinkView.frameBorderColor = UIColor(rgb: 0xb8b0b0) // outside border color
 view.addSubview(pinkView)
 ```
+Lean is the length of the vertical line in this picture
+![lean](https://github.com/ryanisnhp/HangBallonView/blob/master/Screen%20Shot%202018-07-04%20at%206.21.11%20PM.png?raw=true)
